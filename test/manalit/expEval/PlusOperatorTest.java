@@ -12,11 +12,12 @@ public class PlusOperatorTest {
 
         assertEquals(5d, result);
     }
+    
     @Test
-    public void testAddition1(){
+    public void testAdditionOfMinusNumber(){
         Operator subject = new PlusOperator();
-        double result = subject.operate(new Expression(2.0 + 1.0), new Expression(3.0));
+        double result = subject.operate(new Expression(2.0), new Expression(-3.0));
 
-        assertEquals(6.0, result);
+        assertEquals(-1.0, result);
     }
 }
